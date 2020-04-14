@@ -9,6 +9,18 @@
     android:orientation="vertical"
     tools:context=".NewWordActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan kata disini..!!"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:fontFamily="sans-serif-black"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
     <EditText
         android:id="@+id/edit_word"
         android:layout_width="match_parent"
@@ -16,19 +28,20 @@
         android:layout_marginTop="@dimen/big_padding"
         android:layout_marginBottom="@dimen/big_padding"
         android:layout_marginEnd="@dimen/big_padding"
+        android:layout_marginStart="@dimen/big_padding"
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_word"
         android:inputType="textAutoComplete"
         android:padding="@dimen/small_padding"
-        android:textColor="white"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/button_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_padding"
         android:layout_marginEnd="@dimen/big_padding"
-        android:background="#0A5C4E"
+        android:background="#B6B7BD"
         android:text="@string/button_save"
         android:textColor="@color/buttonLabel" />
 
